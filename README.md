@@ -3,7 +3,7 @@
 
 ## Description
 
-Don't know what to read? Need to find a book? My Book 📚 Worm 🐛 is the answer! This application is designed to find and save any book you like. The user has the ability to search, save and delete books from their own person list. In order to use this application, the user will be required to sign up and be logged in! Join the fun...
+Don't know what to read? Need to find a book? My Book 📚 Worm 🐛 is the answer! This application is designed to find and save any book you like. The user has the ability to search, save and delete books from their own personal list. In order to use this application, the user will be required to sign up and be logged in! Join the fun...!
 
 ## Table of Contents
 
