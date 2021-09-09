@@ -1,3 +1,5 @@
 #.gitignore file contents:
-node_modules
+node_modules/
 solid-broccoli
+.DS_Store
+
