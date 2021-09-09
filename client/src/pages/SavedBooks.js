@@ -3,7 +3,7 @@ import { Jumbotron, Container, CardColumns, Card, Button } from 'react-bootstrap
 
 import { getMe, deleteBook } from '../utils/API';
 import Auth from '../utils/auth';
-import { removeBookId } from '../utils/localStorage';
+//import { removeBookId } from '../utils/localStorage';
 import {useMutation, useQuery} from '@apollo/client';
 import { REMOVE_BOOK } from '../utils/mutations';
 import { GET_ME } from '../utils/queries';
@@ -28,16 +28,11 @@ const handleDeleteBook = async ( bookId) => {
   try {
     await removeBook({
       variables: { bookId: bookId },
-      update: cache => {
-        const data = cache.readQuery({ query: GET_ME });
-        const useCache = data.me;
-        const savedCache = userCache.savedBooks;
-        const newBookCache = savedCache.filter((book) => book.bookId !== bookId);
-        data.writeQuery({ query: GET_ME, data: {data: {...data.me.savedBooks}}});
-      }
+      
+      
     });
 
-    removeBooksId(bookId);
+   
   } catch (err) {
     console.error(err);
   }
